@@ -1,0 +1,210 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:"Be Vietnam Pro", sans-serif;
+    scroll-behavior: smooth;
+}
+:root{
+    /* Global Variable */
+    --bgOrange:#e84949;
+    
+}
+#wrapper{
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    /* background-color: rgb(167, 105, 105); */
+}
+.container{
+    /* border: 1px solid black; */
+    width:1200px;
+    margin: 0 auto;
+    
+}
+.navbar{
+    background-image: linear-gradient(to right,white,rgb(231,231,231),white);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+  
+}
+.nav_item{
+    display: flex;
+    gap: 2rem;
+    padding: 0 2rem;
+}
+.nav_item div{
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.nav_item div a{
+    color: black;
+}
+a{
+    text-decoration:none;
+}
+.nav_item div:hover{
+    transition: 2s;
+    font-weight: bold;
+}
+.hero_section{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    gap: 5rem;
+    margin: 4rem auto;
+    padding: 0 1rem;
+    padding-bottom: 8rem;
+
+}
+.faded_font{
+    user-select: none;
+    font-size:7em;
+    color:  rgb(231,231,231);
+
+    bottom: -17%;
+    left: -10%;
+    font-weight:bold;
+    transition: all 3s;
+    position: absolute;
+}
+
+/* For Hero Left Section  */
+.hero_section_left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:2rem;
+    line-height: 30px;
+   
+}
+.hero_section_heading{
+    font-size: 35px;
+    color: #4e69ed;
+    font-weight: 500;
+
+}
+.hero_section_sub_heading{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 45px;
+    line-height: 45px;
+    
+}
+.hero_section_description {
+    margin-top: 1rem;
+    font-weight: 500;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 3;
+    font-size: 100px; 
+}
+
+/* For Hero Right Section */
+
+
+.hero_section_right{
+    position: relative;
+}
+.profile_image{
+    padding: 2.5rem;
+    margin-left:2rem ;
+    filter: grayscale(1);
+    transition: all 2s;
+    animation: scaleImage 5s linear infinite ;
+}
+.profile_image img{
+    z-index: -9;
+}
+
+@keyframes scaleImage{
+    0%{
+        filter:grayscale(0);
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.1);
+        filter: grayscale(1);
+        box-shadow: 3px 3px 10px black;
+    }
+    100%{
+        transform: scale(1);
+        filter: grayscale(0);
+    }
+}
+
+/* For Hire Button */
+
+.btn_pink{
+    background-color: #e84949;
+    padding: 0.8rem 2.3rem;
+    color: white;
+    font-size: 18px;
+    box-shadow: 5px 5px 7px 0px #0000003f;
+    position: relative;
+    z-index: 1;
+    width: 200px;
+}
+.btn_pink::before{
+    content: "";
+    background-color: #1f1f1f;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: all 0.8s;
+    z-index:-1;
+
+}
+.btn_pink:hover::before{
+    transform: scaleX(1);
+    cursor: pointer;
+    
+}
+
+
+/* About Section */
+.about-section{
+    background-image: linear-gradient(to right , rgb(231,231,231),white);
+    padding:40px;
+    padding-top: 50px;
+}
+.about-heading h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: all 2s;
+    animation: scale 5s linear infinite ;
+    
+}
+.about-section-line{
+    width: 97px;
+    height: 3px;
+    background-color:black;
+    border-radius: 3px;
+}
+.about-section-content{
+    padding-top: 20px;
+    font-size: large;
+    line-height: 30px;
+    
+}
+@keyframes scale {
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+    transform: translateY(1);
+    }
+    100%{
+      transform: translateY(0);
+    }
+    
+    
+}
+
+
