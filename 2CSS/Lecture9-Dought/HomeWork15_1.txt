@@ -1,0 +1,15 @@
+Question 1: Product Card
+Answer 1 : Done 
+
+
+
+Question 2 : Figma Link - CodeHelp WebPage
+Answer 2 : https://www.figma.com/file/yCb8S93CG1ckFBLeFQy98l/CodeHelp-Figma-Assignment--1?node-id=48%3A42
+
+
+
+Question 3 : Image Gallery using grid?
+Answer 3:
+
+
+Attempt - CSS Quiz , Debugging Exercise

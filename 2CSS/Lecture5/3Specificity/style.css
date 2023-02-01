@@ -1,0 +1,17 @@
+#container{
+    width:400px;
+    border: 2px solid black;
+    
+}
+h2,p{
+    text-align: center;
+}
+#para{
+    color: green;
+}
+p{
+    color: brown;
+}
+.wrapper{
+    color: blue;
+}

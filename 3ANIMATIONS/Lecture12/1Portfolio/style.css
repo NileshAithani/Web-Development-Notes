@@ -1,0 +1,247 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:"Be Vietnam Pro", sans-serif;
+    scroll-behavior: smooth;
+}
+:root{
+    /* Global Variable */
+    --bgOrange:#e84949;
+    
+}
+#wrapper{
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.container{
+    /* border: 1px solid black; */
+    width:1200px;
+    margin: 0 auto;
+}
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+  
+}
+.nav_item{
+    display: flex;
+    gap: 2rem;
+    padding: 0 2rem;
+}
+.nav_item div{
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.nav_item div a{
+    color: black;
+}
+a{
+    text-decoration:none;
+}
+.nav_item div:hover{
+    transition: 2s;
+    font-weight: bold;
+}
+.hero_section{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 5rem;
+    margin: 4rem auto;
+    padding: 0 1rem;
+    padding-bottom: 8rem;
+
+}
+.faded_font{
+    user-select: none;
+    font-size:7em;
+    color:  rgb(231,231,231);;
+
+    bottom: -16%;
+    left: -5%;
+    font-weight:bold;
+    transition: all 3s;
+    position: absolute;
+}
+.hero_section_left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:2rem;
+   
+}
+.hero_section_heading{
+    font-size: 35px;
+    color: #343d68;
+    font-weight: 500;
+
+}
+.role{
+    color:#4e45d5;
+    font-weight: 800;
+}
+.hero_section_sub_heading{
+    font-size: 45px;
+    line-height: 45px;
+}
+.hero_section_description{
+    margin-top: 1rem;
+    width: 70%;
+    font-weight: 500;
+}
+
+
+.hero_section_right{
+    position: relative;
+}
+.profile_image{
+    padding: 2.5rem;
+    filter: grayscale(1);
+    transition: all 2s;
+    animation: scaleImage 5s linear infinite ;
+}
+.profile_image img{
+    z-index: -9;
+}
+
+@keyframes scaleImage{
+    0%{
+        filter:grayscale(0);
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.1);
+        filter: grayscale(1);
+        box-shadow: 3px 3px 10px black;
+    }
+    100%{
+        transform: scale(1);
+        filter: grayscale(0);
+    }
+}
+
+
+/* Project Section  */
+
+.project_section{
+    background-color:rgb(231,231,231);
+    margin-top: 4rem;
+}
+.Project_section_heading{
+    color: var(--bgOrange);
+    font-size: 90px;
+    text-align: center;
+    padding-top: 30px;    
+}
+.project_container{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 3rem 0;
+
+    display: flex;
+    flex-direction: column;
+     gap: 20px;
+
+}
+.project_card{
+    width:90%;
+    height: 550px;
+    background-image: url(./Images/projects/Project1.png);
+    background-size: cover;
+    position: relative;
+    box-shadow: 0px 0px 40px #1f1f1f;
+
+}
+
+.project_card::after{
+    content:"";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #1f1f1f9a;
+    transform: scaleX(1);
+
+}
+
+.project_card::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(45deg, #343d68,#343d68be,#343d687c);
+
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: all 0.4s;
+    
+}
+.project_card:hover::before{
+    transform: scaleX(1);
+
+}
+
+.project_number{
+    position:absolute;
+    font-size: 200px;
+    font-weight: 600;
+    color: white;
+    z-index: 10;
+}
+.project_number_right{
+    right: -40px;
+    top: -45px;
+  
+}
+.project_number_left{
+    left: -40px;
+    top: -45px;
+   
+}
+.project_content{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding: 2em;
+    bottom: 20%;
+    z-index: 5;
+    gap: 1em;
+    transition:all 0.4s;
+}
+
+.project_content_left{
+    left: 10%;
+}
+.project_content_right{
+    right: 10%;
+}
+.project_skill_container{
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.project_skill{
+    width: 40px;
+}
+.project_heading{
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 3rem;
+}
+.project_subHeading{
+    width: 70%;
+    font-size: 16px;
+    font-style: italic;
+}

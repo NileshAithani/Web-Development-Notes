@@ -1,0 +1,38 @@
+
+/* For Linear gradient */
+.wrapper{
+    border: 3px solid black;
+    box-sizing: border-box;
+    padding: 30px;
+    text-align: center;
+    height: 200px;
+    width: 300px;
+    background-image: linear-gradient(Orange,white,green);
+    /* background-image: linear-gradient(direction,color1,color2,....); */
+}
+
+/* For radial gradient */
+.myDiv{
+    border: 3px solid black;
+    box-sizing: border-box;
+    width: 300px;
+    height: 200px;
+    text-align: center;
+    padding:30px;
+    background-image: radial-gradient(circle,red,blue,orange);
+}
+
+
+/* For conial gradient */
+.temp{
+    border: 2px solid black;
+    padding: 30px;
+    text-align: center;
+    height: 200px;
+    width: 300px;
+    /* background-image:conial-gradientt([45] [at position,] color [degree], color [degree], …);; */
+
+     background-image:conic-gradient(red,orange,yellow,pink,green,blue,aqua,brown,lightgreen); 
+
+    /* background-image: repeating-conic-gradient(red 5%,yellow 10%); */
+}

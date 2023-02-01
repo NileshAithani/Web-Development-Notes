@@ -1,0 +1,24 @@
+.box{
+    background-color: aqua;
+    /* transform: translateX(10px); */
+
+    /* transform: rotate(-45deg); */
+
+    margin: 200px;
+    /* transform: scale(2,3); */
+/* 
+    transform: scale(2,3);
+    transform: skew(20deg); */
+
+}
+
+/* For 3-D transformation  */
+
+
+.box{
+    transform: perspective(10px) translateZ(-10px);
+
+    
+
+
+}

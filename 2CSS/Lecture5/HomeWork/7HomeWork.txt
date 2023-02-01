@@ -1,0 +1,36 @@
+Question 1 : Explore:-
+                      ->Universal selector
+                      ->Nested Selector
+                      ->Attribute Selector
+Answer : Done
+
+
+
+Question 2 : Font:-
+                      ->Font Family
+                      ->Font Weight
+                      ->Font Style                   
+                      ->Emphasis & Important
+                      ->How to add external font
+Answer : Not Done
+
+
+
+Question 3 : Box have 100*100 resolution and words have more than 1000 what will happen?
+Answer : The text will overflow. we can use the overflow property.
+
+
+
+
+Question 4 : Style Tribute page using External css?
+Answer : Done
+
+
+
+Question 5 : Can we create a card like this? [Web Bootcamp Card]
+Answer : Done
+
+
+
+Question 6 : Difference between 1% and 1vw?
+Answer : 

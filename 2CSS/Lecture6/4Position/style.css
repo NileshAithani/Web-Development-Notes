@@ -1,0 +1,14 @@
+.box{
+    border: 1px solid black;
+    position: relative;
+    left:50px ;
+}
+.divc{
+    
+    border: 1px solid black;
+    background-color: brown;
+    color: white;
+    position: stick;
+    top: 50px;
+
+}

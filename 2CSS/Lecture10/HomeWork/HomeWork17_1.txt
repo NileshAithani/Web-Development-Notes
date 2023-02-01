@@ -1,0 +1,34 @@
+Question 1- Grid Auto Column Exist? if not then Why?
+Answer- Yes, Grid auto column exist. Bascically it specifies
+        the size of the implicitly created grid column track or 
+        pattern of tracker. 
+
+
+
+
+Question 2- Diff between grid and inline-grid?
+Answer : The difference between the values inline-grid and grid is that 
+         the inline-grid will make the element inline while grid will make it 
+         a block-level element.
+
+
+
+
+
+
+Question 3- Explore -
+        https://rachelandrew.co.uk/archives/2015/02/04/css-grid-layout-creating-complex-grids/
+
+     - https://gridbyexample.com/examples/example21/
+
+
+
+
+Question 4- Create Layout which used flex and Grid Together.
+
+
+
+Question 5 : Create the blog page.
+
+
+

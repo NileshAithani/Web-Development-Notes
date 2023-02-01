@@ -1,0 +1,55 @@
+.mydiv{
+    /* border-radius:10px ; */
+    width: 350px;
+    height:350px ;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
+    padding: 20px 10px 0 20px;
+    margin: 50px;  
+    border-radius: 10px;
+}
+
+
+#discount{
+    border-radius: 3px;
+    padding: 4px;
+    background-color:lightgreen ;
+    text-align: center;
+    font-size: 15px;
+    color: white;
+   
+}
+hr{
+    width: 75%;
+    float: left;
+    border: 1px solid rgba(128, 128, 128, 0.27);
+}
+img{
+    border-radius: 10px;
+    width:340px;
+    height:200px;
+}
+#price{
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 15px;
+    color: rgb(102, 116, 204);
+    padding-right:5px ;
+}
+#realprice{
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 15px;
+    color: rgb(119, 124, 133);
+    padding-right:5px ;
+
+}
+h3{
+    font-weight: 1000;
+   
+}
+.wrapper{
+    width: 470px; 
+    text-align: center;
+    text-shadow: 2px 2px 2px brown;
+   
+}

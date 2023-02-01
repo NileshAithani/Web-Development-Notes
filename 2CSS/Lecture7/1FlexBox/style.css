@@ -1,0 +1,16 @@
+.container{
+    border: 2px solid green;
+    height: 200px;
+    display:flex;
+    /* flex-direction: column; */
+
+    /* flex-wrap: wrap;
+    flex-flow: column wrap; */
+
+    justify-content: center;
+    align-items: center;
+    
+}
+.box{
+    border: 1px solid brown;
+}

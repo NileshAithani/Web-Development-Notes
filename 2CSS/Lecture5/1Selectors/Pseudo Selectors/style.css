@@ -1,0 +1,25 @@
+.mydiv{
+    border: 3px solid black;
+    
+    padding: 40px;
+    background-color:lightgreen ;
+}
+
+.test{
+    text-align: center;
+    padding: 5px;
+    margin: 6px;
+    background-color: aqua;
+    font-size: 12px;
+    border: 3px solid black;
+    transition: 1.0s;
+    
+}
+#over:hover{
+    background-color: skyblue;
+    color: blueviolet;
+}
+#focus:focus{
+    background-color: lightblue;
+    color: black;
+}
