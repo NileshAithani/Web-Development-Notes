@@ -16,12 +16,7 @@
     overflow-x: hidden;
     /* background-color: rgb(167, 105, 105); */
 }
-.container{
-    /* border: 1px solid black; */
-    width:1200px;
-    margin: 0 auto;
-    
-}
+
 .navbar{
     background-image: linear-gradient(to right,white,rgb(231,231,231),white);
     display: flex;
@@ -38,7 +33,7 @@
 .nav_item div{
     font-size: 20px;
     font-weight: 500;
-    cursor: pointer;
+    
 }
 .nav_item div a{
     color: black;
@@ -68,9 +63,9 @@ a{
     color:  rgb(231,231,231);
 
     bottom: -17%;
-    left: -10%;
+    left: 1%;
     font-weight:bold;
-    transition: all 3s;
+    /* transition: all 3s; */
     position: absolute;
 }
 
@@ -115,6 +110,8 @@ a{
     filter: grayscale(1);
     transition: all 2s;
     animation: scaleImage 5s linear infinite ;
+    border-radius: 5px;
+    
 }
 .profile_image img{
     z-index: -9;
@@ -193,18 +190,54 @@ a{
     line-height: 30px;
     
 }
-@keyframes scale {
-    0%{
-        transform: translateY(0);
-    }
-    50%{
-    transform: translateY(1);
-    }
-    100%{
-      transform: translateY(0);
-    }
-    
+
+
+/* ----------------------------Contact Me Section------------------------------ */
+.contact-section{
+    background-image: linear-gradient(to right , rgb(231,231,231),white);
+    padding:40px;
+    padding-top: 50px;
+}
+.contact-heading h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: all 2s;
+    animation: scale 5s linear infinite ;
     
 }
-
+.contact-section-line{
+    width: 180px;
+    height: 3px;
+    background-color:black;
+    border-radius: 3px;
+}
+.contact-content{
+    padding-top: 20px;
+    padding-bottom: 20px; 
+    font-size: large;
+    line-height: 30px;  
+}
+.space{
+    width: 350px;
+    height: 40px;
+    font-size: medium;
+    padding: 8px;
+}
+label{
+    font-weight: 600;
+}
+textarea{
+    padding: 8px;
+    font-size: medium;
+}
+#submit-button{
+    width: 140px;
+    height: 50px;
+    background-color: #e84949;
+    color: white;
+    font-size: large;
+}
+#submit-button:hover{
+    background-color: black;
+   
+}
 
