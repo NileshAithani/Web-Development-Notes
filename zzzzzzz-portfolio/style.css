@@ -25,6 +25,14 @@
     padding: 1rem;
   
 }
+.nav_logo a{
+    font-size: 30px;
+    font-weight: 700;
+    color: black;
+    padding: 0 2rem;   
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
 .nav_item{
     display: flex;
     gap: 2rem;
@@ -48,12 +56,12 @@ a{
 .hero_section{
     position: relative;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
 
     gap: 5rem;
     margin: 4rem auto;
-    padding: 0 1rem;
+    padding: 0 7rem;
     padding-bottom: 8rem;
 
 }
