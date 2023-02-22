@@ -54,7 +54,55 @@ let z = document.querySelectorAll('.class-Name'); // select all the class availa
 
 // (2)----------Update Existing Content------------
 
+
 // 1 - InnerHTML
+
+//a - Get (get all the decendent tags with information)
+
+let content1 =document.querySelector('h1');
+console.log(content1.innerHTML);
+
+//b - Set (set the content in palce of all decendent)
+content.innerHTML = ' ';
+
+
+
+
+
+
+// 2 - OuterHTML ( sset or return the html element , including attribute , start tag and end tag)
+
+
+//return the outerHTML property
+console.log(content1.outerHTML);
+
+//set the outerHTML property 
+content1.outerHTML = text ;
+
+
+
+
+
+
+
+// 3 - innerText  ( this property set or returns the text content of an element) (Not print hidden content )
+
+content1.innerText ;  //return 
+content1.innerText = text ;  //set
+
+
+
+
+// 4 - textContent  (This property set or returns the text content of the specified node and all its decendents. ) (print hidden content)
+
+console.log(document.querySelector('h1').textContent);
+
+
+
+
+
+//---------------------Adding New Element -----------------------------
+
 
 
 
