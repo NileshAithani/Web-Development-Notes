@@ -37,21 +37,29 @@
     display: flex;
     gap: 2rem;
     padding: 0 2rem;
+
 }
-.nav_item div{
+
+.nav_item a{
     font-size: 20px;
     font-weight: 500;
-    
-}
-.nav_item div a{
     color: black;
+    
+   
+    
+
+   
+    
 }
 a{
     text-decoration:none;
 }
-.nav_item div:hover{
-    transition: 2s;
-    font-weight: bold;
+
+.nav_item a:hover{
+   /* transition: 2s; */
+   font-weight: bold;
+   
+      
 }
 .hero_section{
     position: relative;
@@ -174,6 +182,37 @@ a{
 }
 
 
+/* .hero-img{
+    position: absolute;
+    z-index: 10;
+}
+#hero-coder{
+    top: -17%;
+    left: 40%;
+    transition: all 2s;
+    animation: scaleImages 1s linear infinite ;
+}
+#hero-codetag{
+    top: -10%;
+    left: 90%;
+}
+
+@keyframes scaleImages{
+    0%{
+       
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(0.8);
+        
+        
+    }
+    100%{
+        transform: scale(1);
+     
+    }
+} */
+
 /* About Section */
 .about-section{
     background-image: linear-gradient(to right , rgb(231,231,231),white);
@@ -198,6 +237,7 @@ a{
     line-height: 30px;
     
 }
+
 
 
 /* ----------------------------Contact Me Section------------------------------ */
