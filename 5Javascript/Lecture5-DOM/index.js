@@ -30,8 +30,8 @@ window.console.log(document.getElementsByTagName('h1'));
 
 
 // 4 - $0
-let content = $0;
-console.log(content);
+// let content = $0;
+// console.log(content);
 
 
 
