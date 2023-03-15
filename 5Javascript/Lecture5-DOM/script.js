@@ -49,3 +49,5 @@ content.appendChild(newPara);
 
 //insertAdjacentHTML();
 //content.removeChild(newPara);
+
+
