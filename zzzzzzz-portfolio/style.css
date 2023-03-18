@@ -23,6 +23,7 @@
     justify-content: space-around;
     align-items: center;
     padding: 1rem;
+    
   
 }
 .nav_logo a{
@@ -34,21 +35,20 @@
 }
 
 .nav_item{
+    max-width:60vh;
     display: flex;
-    gap: 2rem;
+    gap: 40px;
     padding: 0 2rem;
+    justify-content: end;
 
 }
 
+
+
 .nav_item a{
     font-size: 20px;
-    font-weight: 500;
-    color: black;
-    
-   
-    
-
-   
+    font-weight: 600;
+    color: black;  
     
 }
 a{
@@ -57,7 +57,8 @@ a{
 
 .nav_item a:hover{
    /* transition: 2s; */
-   font-weight: bold;
+   color: #4e69ed;
+   transition: 0.2s ease-out;
    
       
 }
