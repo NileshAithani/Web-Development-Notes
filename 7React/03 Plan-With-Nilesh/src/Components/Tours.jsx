@@ -3,14 +3,14 @@ import Card from './Card'
 
 function Tours({tours , removeTour}){
     return(
-        <div>
+        <div className='container'>
 
         <div>
-            <h2>Plan With Nilesh</h2>
+            <h2 className='title'>Plan With Nilesh</h2>
         </div>
             
 
-         <div>
+         <div className='cards'>
              {
                 tours.map((tours)=>{
                 return <Card {...tours} removeTour={removeTour}></Card>
