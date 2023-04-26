@@ -15,24 +15,53 @@
 // console.log( 'time taken ' + (t2-t1) + ' ms');
 
 
-//optimizing a little bit 
 
-const t3 = performance.now();
-let myDiv = document.createElement('div');
 
-for(let i =1 ; i<=100 ; i++){
-    let ELement = document.createElement('p');
-    Element.textContent='This is my para' + i ;
 
-    myDiv.appendChild(Element);
 
+//---------------optimizing a little bit-------------------------- 
+
+// const t3 = performance.now();
+// let myDiv = document.createElement('div');
+
+// for(let i =1 ; i<=100 ; i++){
+//     let ELement = document.createElement('p');
+//     Element.textContent='This is my para' + i ;
+
+//     myDiv.appendChild(Element);
+
+// }
+
+// document.body.appendChild(myDiv);
+
+// const t4 = performance.now();
+
+// console.log('time taken ' + (t4-t3) + ' ms');
+
+
+
+
+
+
+
+//---------------Document Fragmet----------------
+
+let fragment = document.createDocumentFragment();
+
+for(let i = 1 ; i<=100 ; i++){
+    let newElement = document.createElement('p');
+    newElement.textContent = 'This is Para '+ i ;
+
+    fragment.appendChild(newElement);
 }
 
-document.body.appendChild(myDiv);
+document.body.appendChild(fragment);
 
-const t4 = performance.now();
 
-console.log('time taken ' + (t4-t3) + ' ms');
+
+
+
+
 
 
 
