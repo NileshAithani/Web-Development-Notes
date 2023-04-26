@@ -1,7 +1,11 @@
-// console.log('Nilesh Here')
+//---------------Asynchronous JS --------------------------
+
+// console.log('Nilesh Here');
 
 
-// setTimeout(function(){console.log('Third')};)
+// setTimeout(function(){
+//     console.log('Third')
+// }) ;
 
 // function sync(){
 //     console.log('First');
@@ -13,16 +17,26 @@
 
 
 
-//-----------------Promise----------------------
 
-// let newPromise =new Promise(function(resolve , reject){
-// setTimeout(function(){console.log("Inside Promise")},5000);
+//----------------------Promise----------------------
 
-// //resolve(69);
+//-----Promise1
 
-// // reject(new error('Error Occur'));
+// let newPromise1 =new Promise(function(resolve , reject){
+
+// setTimeout(function(){
+//     console.log("Inside Promise"),5000
 // });
 
+// // resolve(69);
+
+// reject(new error('Error Occur'));
+// });
+
+// console.log("First")
+
+
+//-----Promise2---
 
 // let mewPromise2 = new Promise(function(resolve , reject){
 //     setTimeout(function(){
@@ -35,11 +49,30 @@
 // console.log("Thrid");
 
 
+// let waada1 = new Promise((resolve, reject) => {
+//     setTimeout(function () {
+//         console.log('SetTimeout1 Started')} , 3000 );
+//    resolve(true);
+// });
+
+
+// let output =waada1.then(()=>{
+//     let waada2 = new Promise((resolve ,reject) =>{
+//         setTimeout(function () {
+//             console.log('SetTimeout2 Started')} , 5000 );
+//         resolve("waada2 resolved");
+//     })
+//     return waada2;
+// })
+
+// output.then((value)=> console.log(value));
 
 
 
 
-///---------------------------async----------------------------
+
+
+///--------------------async-----------------------
 
 
 // async function abcd(){
@@ -50,29 +83,29 @@
 
 
 
-// async function weather(){
 
 
-//     let ukWeather =new Promise((resolve ,reject) => {
-//         setTimeout(()=>{
-//             resolve("Uttrakhand temprature is cool");
-//         },4000);
-//     });
-
-//     let upWeather =new Promise((resolve ,reject) => {
-//         setTimeout(()=>{
-//             resolve("UttarPradesh temprature is high");
-//         },5000);
-//     });
-
-//     let UK = await ukWeather;
-//     let UP = await upWeather;
-
-//     return [UK,UP];
+async function weather(){
 
 
+    let ukWeather =new Promise((resolve ,reject) => {
+        setTimeout(()=>{
+            resolve("Uttrakhand temprature is cool");
+        },5000);
+    });
 
-// }
+    let upWeather =new Promise((resolve ,reject) => {
+        setTimeout(()=>{
+            resolve("UttarPradesh temprature is high");
+        },10000);
+    });
+
+    let UK = ukWeather;
+    let UP = upWeather;
+
+    return [UK,UP];
+
+}
 
 
 
