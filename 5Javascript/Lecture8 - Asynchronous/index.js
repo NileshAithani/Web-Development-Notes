@@ -49,8 +49,8 @@
 // console.log("Thrid");
 
 
-// let waada1 = new Promise((resolve, reject) => {
-//     setTimeout(function () {
+// let waada1 = new Promise(function(resolve, reject){
+//     setTimeout(()=> {
 //         console.log('SetTimeout1 Started')} , 3000 );
 //    resolve(true);
 // });
@@ -83,29 +83,29 @@
 
 
 
+// async function weather(){
 
 
-async function weather(){
+//     let ukWeather =new Promise((resolve ,reject) => {
+//         setTimeout(()=>{
+//             resolve("Uttrakhand temprature is cool");
+//         },1000);
 
+//     });
 
-    let ukWeather =new Promise((resolve ,reject) => {
-        setTimeout(()=>{
-            resolve("Uttrakhand temprature is cool");
-        },5000);
-    });
+//     let upWeather =new Promise((resolve ,reject) => {
+//         setTimeout(()=>{
+//             resolve("UttarPradesh temprature is high");
+//         },5000);
+//     });
 
-    let upWeather =new Promise((resolve ,reject) => {
-        setTimeout(()=>{
-            resolve("UttarPradesh temprature is high");
-        },10000);
-    });
+//     //------Use of await-------
+//     let UK = await ukWeather;
+//     let UP = await upWeather;
 
-    let UK = ukWeather;
-    let UP = upWeather;
+//     return [UK,UP];
 
-    return [UK,UP];
-
-}
+// }
 
 
 
@@ -113,21 +113,20 @@ async function weather(){
 //------------------Fetch API--------------------------------
 
 
-// let obj = {
-//     heading : "head"
-// };
-
 // async function utility(){
-
-//     let content = await fetch('https://jsonplaceholder.typicode.com/posts/1');
+//     let content = await  fetch('https://jsonplaceholder.typicode.com/posts/1');
 //     let output =await content.json();
-//     console.log(content);
+//     console.log(output);
 // }
 
 // utility();
 
 
+
+
+
 // async function helper(){
+
 // let option = {
 //     method : 'POST',
 //     body :JSON.stringify({
@@ -141,9 +140,11 @@ async function weather(){
 //     },
 // };
 
+
 // let content =await fetch('https://jsonplaceholder.typicode.com/posts',option);
-// let response =content.json();
+// let response = await content.json();
 // return response ;
+
 // }
 
 
@@ -154,15 +155,23 @@ async function weather(){
 
 // utility();
 
-function outer(){
-    const name = Nilesh;
-    function inner(){
-        console.log('Hello'+ name);
-    }
-}
 
-let a = outer();
-a();
+
+
+//-----------------Closure----------------------
+  
+
+
+// function outer(){
+//     const name = "Nilesh";
+//     function inner(){
+//         console.log('Hello '+ name);
+//     }
+//    return inner();
+// }
+
+// let a = outer();
+// a();
 
 
 
